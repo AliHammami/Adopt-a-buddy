@@ -1,0 +1,14 @@
+.page-footer {
+    .page-footer-container{
+        background-color: $main-color;
+        padding: 3% 6%;
+
+        .row .col-md-6, .row .col-md-3 h5 {
+            color: #fff;
+        }
+    }
+
+    .footer-copyright {
+        background-color: $main-color-alternate;
+    }
+}

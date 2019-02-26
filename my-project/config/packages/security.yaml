@@ -1,0 +1,66 @@
+security:
+    encoders:
+        App\Entity\User:
+            algorithm: bcrypt
+        App\Entity\Association:
+            algorithm: bcrypt
+    # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+    providers:
+        # used to reload user from session & other features (e.g. switch_user)
+        app_user_provider:
+            entity:
+                class: App\Entity\User
+                property: email
+        app_association_provider:
+            entity:
+                class: App\Entity\Association
+                property: email
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        login1:
+            pattern:  ^/login_check_user
+            provider:  app_user_provider
+            stateless: true
+            anonymous: true
+            json_login:
+                check_path: /login_check_user
+                success_handler: lexik_jwt_authentication.handler.authentication_success
+                failure_handler: lexik_jwt_authentication.handler.authentication_failure
+        login2:
+            pattern:  ^/login_check_association
+            provider:  app_association_provider
+            stateless: true
+            anonymous: true
+            json_login:
+                check_path: /login_check_association
+                success_handler: lexik_jwt_authentication.handler.authentication_success
+                failure_handler: lexik_jwt_authentication.handler.authentication_failure
+        
+        # register_user:
+        #     pattern:  ^/api/users
+        #     methods: [POST]
+        #     stateless: true
+        #     anonymous: true
+        
+        # register_association:
+        #     pattern:  ^/api/associations
+        #     methods: [POST]
+        #     stateless: true
+        #     anonymous: true
+        
+        # api:
+        #     pattern:  ^/api
+        #     stateless: true
+        #     anonymous: false
+        #     provider: app_user_provider
+        #     guard:
+        #         authenticators:
+        #             - lexik_jwt_authentication.jwt_token_authenticator
+
+    access_control:
+        - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/users, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/associations, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api, roles: IS_AUTHENTICATED_ANONYMOUSLY }

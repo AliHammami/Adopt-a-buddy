@@ -1,0 +1,63 @@
+.containerRegister-Title{
+    padding: 2rem 0;
+}
+
+.card-footer {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    border-top: 0px solid;
+    padding: 0;
+    justify-content: space-around;
+    background-color: #FFF;
+
+    & button {
+            font-size: 0.7rem;
+            margin: 0;
+    }
+
+    &-myanimals{
+        border-top: 1px solid #eee;
+        padding-top: 1rem;
+    }
+}
+
+.card-statut {
+    margin-top: 16px;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+}
+
+img.img-fluid.animalPicture {
+    width: 100%;
+}
+
+.btn-success {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+}
+
+.img-thumbnail-asso{
+    width: 300px;
+    height: 200px;
+}
+
+
+.css-vj8t7z {
+    margin-left: 0.5em;
+    width: 95%;
+}
+
+.uploadImageContainer{
+  margin-top: 8em,
+}
+
+.titleProfileAdd{
+  margin-bottom: 2em;
+  margin-top: 0.2em;
+}
+
+.select {
+  width: 99%;
+  margin-bottom: 1em;
+}

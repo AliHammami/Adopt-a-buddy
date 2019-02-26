@@ -1,0 +1,80 @@
+/* .search-container {
+  margin-top: 100px;
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+.form-inline-flex {
+  display: inline-flex;
+  flex-flow: initial;
+  float: right;
+  padding-top: 50px;
+}
+
+.btn-a-search {
+  padding-right: 1em !important;
+  padding-left: 1em !important;
+    background-color: $secondary-color;
+    color: #fff !important;
+    &:hover {
+      background-color: $secondary-color-hover;
+    }
+  }
+}
+*/
+
+.Result_card .card-image {
+  background-size: cover;
+  background-position: top;
+}
+
+.card-search {
+  .card-search-desc {
+    margin-bottom: 18px;
+    .card-animal-name {
+      padding-left: 0.1em;
+      font-size: 1.5rem;
+    }
+  }
+  .card-animal-name {
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+} 
+
+#myCarousel{
+  .w-100 {
+    max-height: 430px;
+    min-height: 403px;
+  }
+}
+
+.containerSearch {
+  .css-c0lsh8 svg.search-icon {
+    fill: $secondary-color;
+  }
+
+  .css-1ts1dz1:checked + label::before,
+  .css-yljddh:hover + label::before,
+  .css-yljddh:checked + label::before,
+  .css-yljddh + label::after,
+  .css-cy8bmt::after {
+    border-color: $secondary-color;
+}
+
+.css-1ts1dz1 + label::after, .css-fdtpv0 {
+  background-color: $secondary-color;
+}
+
+.css-fdtpv0:hover, .css-fdtpv0:focus {
+  background-color: $secondary-color-hover;
+}
+
+.css-12nu9md {
+  display: none;
+}
+}
+

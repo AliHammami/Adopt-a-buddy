@@ -1,0 +1,28 @@
+.containerRegister{
+  margin-top: 8em;
+}
+.cardiv{
+  width: 80%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.divheader {
+  background-color: $secondary-color;
+  color: white;
+}
+
+.form-control {
+  width: 95%;
+}
+
+button, .btn-primary {
+  display: block;
+  text-align: center;
+  margin: 1em;
+  background-color: $main-color;
+  border-color:  $main-color;
+  &:hover {
+   background-color: $main-color-alternate;
+ }
+}

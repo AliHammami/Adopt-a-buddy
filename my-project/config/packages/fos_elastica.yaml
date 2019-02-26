@@ -1,0 +1,44 @@
+# Read the documentation: https://github.com/FriendsOfSymfony/FOSElasticaBundle/blob/master/Resources/doc/setup.md
+fos_elastica:
+    clients:
+        # default: { host: localhost, port: 9200 }
+        default:
+            host: scalr.api.appbase.io/AdoptABuddy/
+            transport: Https
+            username: 'teCsQ5K8x'
+            password: '4fd9bb62-0be5-4eee-a062-eb9845be616a'
+            # host: scalr.api.appbase.io/buddy/
+            # transport: Https
+            # username: 'UmhkIeRir'
+            # password: '0ac1f475-a99c-494a-b39d-b39ffd7ebc19'
+    indexes:
+        AdoptABuddy:
+        # buddy:
+            types:
+                animal:
+                    properties:
+                        id: ~
+                        name: ~
+                        description: ~
+                        age: ~
+                        race: ~
+                        coats: ~
+                        color: ~
+                        size: ~
+                        sex: ~
+                        status: ~
+                        photos: ~
+                        association: ~
+                    persistence:
+                        driver: orm
+                        model: App\Entity\Animal
+                        provider: ~
+                address:
+                    properties:
+                        cp: ~
+                        city: ~
+                        associations: ~
+                    persistence:
+                        driver: orm
+                        model: App\Entity\Address
+                        provider: ~

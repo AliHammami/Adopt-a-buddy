@@ -1,0 +1,104 @@
+.img-thumbnail{
+  border-radius: 48%;
+  width: 140px;
+  height: 140px;
+}
+
+.editProfile{
+  margin-left: 10em;
+}
+
+.titleProfile{
+  margin-bottom: 2em;
+  margin-top: 0.2em;
+}
+
+.item{
+  padding-right: 0;
+}
+
+.update{
+  padding-left: 0;
+}
+
+.onItem {
+  background-color: $secondary-color;
+  color: white;
+}
+
+.onItem:hover {
+  background-color: $secondary-color-hover;
+  color: white;
+}
+
+//Card
+
+.card-city {
+  text-transform: uppercase;
+}
+
+.card-city, .card-animal-name {
+  margin-bottom: 0rem;
+}
+
+.card-city, .card-asso {
+  font-size: 0.7em;
+  a {
+    color: $secondary-color;
+    &:hover {
+      color: $secondary-color-hover; 
+    }
+  }
+}
+
+.card-link {
+  color: #fff;
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  &:hover {
+    background-color: $secondary-color-hover;
+  }
+}
+
+.bwm-card {
+  border: none;
+
+  .card-block {
+    padding-top: 8px;
+
+    .card-subtitle {
+      margin: 0;
+      font-weight: 500;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #16861a;
+    }
+
+    .card-title {
+      font-size: 19px;
+      margin: 3px 0;
+    }
+
+    .card-text {
+      font-size: 14px;
+      font-weight: 300;
+      color: #7e7e7e;
+      margin-bottom: 0;
+    }
+  }
+}

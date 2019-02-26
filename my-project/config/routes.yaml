@@ -1,0 +1,9 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+login_user:
+    path:     /login_check_user
+    methods:  [POST]
+login_association:
+    path:     /login_check_association
+    methods:  [POST]

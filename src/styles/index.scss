@@ -1,0 +1,43 @@
+/* import 'reset'; */
+@import 'variables.scss';
+@import 'header/header.scss';
+@import 'login/login.scss';
+@import 'registerAdoptant/registerAdoptant.scss';
+@import 'registerAsso/registerAsso.scss';
+@import 'associationProfile/associationProfile.scss';
+@import 'adoptantProfile/adoptantProfile.scss';
+@import 'animal/animal-listing.scss';
+@import 'animal/animal-detail.scss';
+@import 'search/search-listing.scss';
+@import 'footer/footer.scss';
+@import 'adminAsso/adminAssociation.scss';
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+
+
+body {
+  color: $main-color;
+}
+
+a {
+  color: $tertiary-color;
+  &:hover{
+  color: $tertiary-color-hover;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+font-family: 'Roboto', sans-serif;
+}
+
+/* Container */
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1500px;
+}
+}
+
