@@ -1,6 +1,6 @@
 # Adopt-a-buddy
 
-Projet de fin de formation realisé avec 2 développeurs Symfony et 2 React (dont moi-même)
+Projet realisé avec 2 développeurs Symfony et 2 React (dont moi-même)
 
 Le but de ce site est de mettre en relation les associations qui s'occupent d'animaux abandonnés et les personnes qui souhaitent en adopter.
 
